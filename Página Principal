@@ -78,12 +78,9 @@
 
 
 
-        <button onclick="alert('Te amo!')" class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full font-semibold transition-colors">
-
-            Clique aqui
-
-        </button>
-
+<a href="surpresa" class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full font-semibold transition-colors inline-block">
+    Ver o Catálogo
+</a>
         
 
     </div>
