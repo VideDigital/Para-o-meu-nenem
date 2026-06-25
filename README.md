@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Um presente para você 🎁</title>
+
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+    <style>
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+            background-color: #121212;
+
+            color: white;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="tela-carregamento" class="min-h-screen flex items-center justify-center bg-[#121212] transition-opacity duration-500">
+
+        <div class="flex flex-col items-center gap-4">
+
+            <div class="h-10 w-10 rounded-full border-2 border-white/20 border-t-white/80 animate-spin"></div>
+
+            <p class="text-sm text-white/60">Carregando presente...</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="tela-presente" class="hidden min-h-screen flex-col items-center justify-center bg-[#121212] p-6 text-center animate-[fadeIn_1s_ease-in-out]">
+
+        
+
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+
+            Surpresa! ❤️
+
+        </h1>
+
+        
+
+        <p class="text-lg md:text-xl text-white/80 max-w-lg leading-relaxed mb-8">
+
+            Oi Minha Princesa, a ideia veio aqui na minha cabeça e queria fazer uma surpresa para você. Espero que goste. Com Amor; Dandan.
+
+        </p>
+
+
+
+        <button onclick="alert('Te amo!')" class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full font-semibold transition-colors">
+
+            Clique aqui
+
+        </button>
+
+        
+
+    </div>
+
+
+
+    <script>
+
+        // Script para esconder a tela de carregamento após 3 segundos e mostrar o presente
+
+        setTimeout(() => {
+
+            const telaCarregamento = document.getElementById('tela-carregamento');
+
+            const telaPresente = document.getElementById('tela-presente');
+
+
+
+            telaCarregamento.style.display = 'none';
+
+            telaPresente.classList.remove('hidden');
+
+            telaPresente.classList.add('flex');
+
+        }, 3000); // 3000 milissegundos = 3 segundos
+
+    </script>
+
+</body>
+
+</html>
